@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript"> 
+
+	function Ausgeben() { 
+		var input_1 = document.getElementById('input-1').value
+		var input_2 = document.getElementById('input-2').value
+		var output = document.getElementById('output')
+		var new_val = input_1.slice(input_2)
+		output.innerHTML = new_val
+		
+	}
+
+</script>	
+
+</head>
+
+		<body>
+			
+			<a>Text:</a>
+			
+			<input id="input-1" type="text" name="name" value="">
+			
+			<br>
+			
+			<a>Ab Zeichennr.:</a>
+			
+			<input id="input-2" type="number" name="nmbr" value="">
+			
+			<br>
+			
+			<button onclick="Ausgeben()">Drucke</button> 
+			
+			
+            <p id="output"></p>
+			
+		</body>
+	
+	
+</html>

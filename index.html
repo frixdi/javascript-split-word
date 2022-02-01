@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+		<script type="text/javascript"> 
+
+		function Ausgeben() { 
+			var Variable = document.getElementByName("name").value; alert(Variable); 
+			var Variable2 = document.getElementByName("nmbr").value; alert(Variable2);
+			var result = Variable.slice(Variable2); alert(result);
+			document.getElementById("Ausgabe")[0].innerHTML = "inhalt"; window.location.reload()
+		
+		}
+	
+	</script>	
+	</head>
+
+<body>
+	
+	<a>Text:</a>
+	
+	<input type="text" name="name" value="">
+	
+	<br>
+	
+	<a>Ab Zeichennr.:</a>
+	
+	<input type="number" name="nmbr" value="">
+	
+	<br>
+	
+	<input type="submit" value="Drucke" onclick="Ausgeben()"> 
+	
+	<div id="Ausgabe" value="result"></div>
+	
+</body>
+
+	
+</html>
